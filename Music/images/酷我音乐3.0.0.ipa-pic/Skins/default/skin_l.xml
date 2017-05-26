@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin version="0x0301" name="默认皮肤" product="kwplayer" platform="iPhone/iTouch" author="酷我音乐" url="http://shouji.kuwo.cn/" email="sjs@kuwo.cn">
+    
+<config>
+</config>
+
+<layout>
+    <mainview bind="main_view">
+        <view bind="bgnavi" position="0, 0, 320, 498" zorder="0">
+            <view bind="bkg_view" position="0, 0, 320, 44" zorder="0"/>
+            <view bind="separator_bkg" position="0, 0, 320, 44" zorder="1"/>
+            <view bind="tab_bar" position="0, 5, 320, 39" zorder="2"/>
+        </view>
+        <playerpanel bind="player_panel" position="0, 498, 320, 50" zorder="2">
+            <imageview bind="player_panel_bkg" zorder="1"/>
+            <imageview bind="artist_photo_frame" position="8, 5, 40, 40" zorder="2"/>
+            <imageview bind="artist_photo" position="9, 6, 38, 38" zorder="3"/>
+            <imageview bind="artist_photo_cover" position="8, 5, 40, 40" zorder="4"/>
+            <view bind="player_title" position="52, 3, 85, 14" zorder="4"/>
+            <view bind="player_solid_title" position="52, 3, 85, 14" zorder="4"/>
+            <view bind="schedule_label" position="52, 17, 85, 12" zorder="4"/>
+            <view bind="player_artist" position="52, 32, 85, 14" zorder="4"/>
+            <button bind="player_play_pause" position="139, 4, 42, 42" zorder="4"/>
+            <button bind="player_next" position="210, 4, 42, 42" zorder="4"/>
+            <button bind="playlist_btn" position="274, 4, 42, 42" zorder="4"/>
+        </playerpanel>
+    </mainview>
+</layout>
+    
+</skin>
