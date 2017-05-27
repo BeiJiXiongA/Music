@@ -13,10 +13,6 @@
 @end
 
 @interface CustomTabBarView : UIView
-{
-    id <btnClickDelegate> delegate;
-}
-
 @property(nonatomic,assign)id <btnClickDelegate>delegate;
 
 - (id)initWithFrame:(CGRect)frame AndBtnImgDic:(NSDictionary *)_imgDic;

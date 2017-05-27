@@ -12,7 +12,6 @@
 #import "MusicCell.h"
 #import "PlayViewController.h"
 #import "CONST.h"
-#import "NetListViewController.h"
 
 
 @implementation MusicListViewController
@@ -23,10 +22,7 @@
 @synthesize musicFile = _musicFile;
 -(void)dealloc
 {
-    [listTableView release];
-    [_listArray release];
-    _musicFile = nil;
-    [super dealloc];
+
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -55,57 +51,23 @@
 }
 */
 
--(void)getFlieList
-{
-    if (!_listArray)
-    {
-        _listArray = [[NSMutableArray alloc] init];
-    }
-    
-    if (_listType == MUSIC_FILE_LIST && _viewType == LIST_VIEW_CONTROLLER)
-    {
-        NSFileManager *fileMgr = [NSFileManager defaultManager];
-        NSArray *documentsPath = [NSArray arrayWithArray:NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)];
-        
-        NSError *error = nil;
-        
-        NSString *documentDir = [documentsPath objectAtIndex:0];
-        _listArray = [[NSArray arrayWithArray:[fileMgr contentsOfDirectoryAtPath:documentDir error:&error ]] retain];
-    }
-    if (_listType == LOCAL_MUSIC_LIST && _viewType == LIST_VIEW_CONTROLLER)
-    {
-        NSLog(@"_musicFile %@",_musicFile);
-        NSFileManager *fileMgr = [NSFileManager defaultManager];
-        NSArray *documentsPath = [NSArray arrayWithArray:NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)];
-        
-        NSError *error = nil;
-        
-        NSString *documentDir = [documentsPath objectAtIndex:0];
-        documentDir = [documentDir stringByAppendingPathComponent:[NSString stringWithFormat:@"/%@",_musicFile]];
-        _listArray = [[NSArray arrayWithArray:[fileMgr contentsOfDirectoryAtPath:documentDir error:&error ]] retain];
-    }
-    [listTableView reloadData];
-}
-
 -(void)viewWillAppear:(BOOL)animated
 {        
-    [self getFlieList];
-    
+    [super viewWillAppear:animated];
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    listTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 44, 320, 460-50-44) style:UITableViewStylePlain];
-    listTableView.backgroundColor = [UIColor clearColor];
-    [listTableView setBackgroundView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"TQTPWeatherBGSunny@2x.jpg"]]];
-    [self getFlieList];
+    
+    listTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT - UI_NAV_BAR_HEIGHT - UI_TAB_BAR_HEIGHT) style:UITableViewStylePlain];
+    listTableView.backgroundColor = [UIColor whiteColor];
     listTableView.delegate = self;
     listTableView.dataSource = self;
     [self.view addSubview:listTableView];
     
-    UIImage *backImage = [UIImage imageNamed:@"back.png"];
+    UIImage *backImage = [UIImage imageNamed:@"back_nav"];
     UIImageView *backImageview = [[UIImageView alloc]initWithImage:backImage];
     UITapGestureRecognizer *backTgr = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(backClick)];
     backImageview.userInteractionEnabled = YES;
@@ -113,10 +75,11 @@
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:backImageview];
     self.navigationItem.leftBarButtonItem = backItem;
     
-    UIImage *addImage = [UIImage imageNamed:@"add_to.png"];
+    UIImage *addImage = [UIImage imageNamed:@"add_to"];
     UIButton *addButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [addButton setImage:addImage forState:UIControlStateNormal];
     [addButton addTarget:self action:@selector(addClick:) forControlEvents:UIControlEventTouchUpInside];
+    
     UIBarButtonItem *editItem = [[UIBarButtonItem alloc]initWithCustomView:addButton];
     self.navigationItem.rightBarButtonItem = editItem;
     
@@ -143,105 +106,48 @@
     return 57;
 }
 
-//#define LOCAL_MUSIC_LIST 6
-//#define NET_MUSIC_LIST 9
-//#define NET_CLASS_LIST 7
-//#define SINGER_LIST 8
-
-//-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    
-//}
-//
-//-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    
-//}
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (_viewType == ADD_MUSIC_TO_LIST && _listType == LOCAL_MUSIC_LIST)
-    {
-        
-    }
-    else if(_listType == MUSIC_FILE_LIST && _viewType == LIST_VIEW_CONTROLLER)
-    {
-        if (!musicList)
-        {
-            musicList = [[MusicListViewController alloc]init];
-        }
-        musicList.listType = LOCAL_MUSIC_LIST;
-        musicList.viewType = LIST_VIEW_CONTROLLER;
-        musicList.musicFile = [_listArray objectAtIndex:indexPath.row];
-        [self.navigationController pushViewController:musicList animated:YES];
-    }
-    else if(_listType == LOCAL_MUSIC_LIST)
-    {
-        zwAppDelegate * Dele = (zwAppDelegate *)[UIApplication sharedApplication].delegate;
-        NSArray *arr = Dele.myTabBarController.view.subviews;
-        for (UIView * v in arr) 
-        {
-            if ([v isKindOfClass:[ButtomView class]]) 
-            {
-                [v setHidden:YES];
-//                NSArray *array = v.subviews;
-//                for (UIView *view in array)
-//                {
-//                    if ([view isKindOfClass:[UIImageView class]])
-//                    {
-//                        [view removeFromSuperview];
-//                    }
-//                }
-//                v.backgroundColor = [UIColor clearColor];
-            }
-        }        
-        playVC = [PlayViewController sharedPlayerViewController];
-        playVC.gono = NO;
-        playVC.musicName = [_listArray objectAtIndex:indexPath.row ];
-        playVC.songsArray = _listArray;
-        playVC.musicFileName = _musicFile;
-        playVC.currentMusic = indexPath.row;
-        
-        [self presentModalViewController:playVC animated:YES];
-    }    
-}
-
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellName = @"musicCell";
     MusicCell *cell = [tableView dequeueReusableCellWithIdentifier:cellName];
     if (cell == nil)
     {
-        cell = [[[NSBundle mainBundle] loadNibNamed:@"MusicCell" owner:self options:nil] lastObject];
+        cell = [[MusicCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"musicCell"];
     }
-    if ([_listArray count]>0)
-    {
-        if (_viewType == LIST_VIEW_CONTROLLER)
-        {
-//            [cell.btn setImage:[UIImage imageNamed:@"toolbar_stop_highlighted.png"] forState:UIControlStateNormal];
-//            [cell.btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-            
-        }
-        else if(_viewType == ADD_MUSIC_TO_LIST)
-        {
-//            cell.btn.tag = 201;
-//            [cell.btn setImage:[UIImage imageNamed:@"selected_gray.png"] forState:UIControlStateNormal];
-//            [cell.btn setImage:[UIImage imageNamed:@"selected.png"] forState:UIControlStateSelected];
-//            [cell.btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-        }
-        if (_listType == LOCAL_MUSIC_LIST)
-        {
-            NSString *fileName = [_listArray objectAtIndex:indexPath.row];
-            cell.textLabel.text = fileName;
-        }
-        else if(_listType == MUSIC_FILE_LIST)
-        {
-            NSString *fileName = [_listArray objectAtIndex:indexPath.row];
-            cell.textLabel.text = fileName;
-        }
-    }
+    NSString *fileName = [_listArray objectAtIndex:indexPath.row];
+    NSString *name = [[fileName lastPathComponent] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    cell.nameLabel.text = [name stringByDeletingPathExtension];
     return cell;
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    zwAppDelegate * Dele = (zwAppDelegate *)[UIApplication sharedApplication].delegate;
+    NSArray *arr = Dele.myTabBarController.view.subviews;
+    for (UIView * v in arr)
+    {
+        if ([v isKindOfClass:[ButtomView class]])
+        {
+            [v setHidden:YES];
+            NSArray *array = v.subviews;
+            for (UIView *view in array)
+            {
+                if ([view isKindOfClass:[UIImageView class]])
+                {
+                    [view removeFromSuperview];
+                }
+            }
+            v.backgroundColor = [UIColor clearColor];
+        }
+    }
+    NSString *selectMusicPath = [_listArray objectAtIndex:indexPath.row ];
+    playVC = [PlayViewController sharedPlayerViewController];
+    playVC.currentMusicPath = selectMusicPath;
+    playVC.songsArray = _listArray;
+    [playVC playMusic:selectMusicPath];
+    [self presentViewController:playVC animated:YES completion:nil];
+}
+
 
 -(void)btnClick:(UIButton *)btn
 {
@@ -283,12 +189,3 @@
 }
 
 @end
-//        NSArray *array = [[NSArray arrayWithArray:[fileMgr contentsOfDirectoryAtPath:documentDir error:&error ]] retain];
-//        for (NSString *name in array)
-//        {
-//            NSLog(@"%c",[name characterAtIndex:0]);
-//            if ([name characterAtIndex:0] != '.')
-//            {
-//                NSLog(@"%@",name);
-//                [_listArray addObject:name];
-//            }

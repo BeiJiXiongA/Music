@@ -8,15 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "PlayViewController.h"
-#import "HttpDownload.h"
 #import "MusicListViewController.h"
 #import "PlayerView.h"
 
 @interface MusicListViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIActionSheetDelegate>
 {
     UITableView *listTableView;
-    NSMutableArray *_listArray;
-    HttpDownload *httpdownload;
     NSInteger listType;
     PlayViewController *playVC;
     NSInteger apiType;
@@ -29,5 +26,5 @@
 @property (nonatomic,assign)NSInteger apiType;
 @property (nonatomic,assign)NSInteger listType;
 @property (nonatomic,assign)NSInteger  viewType;
-@property (nonatomic,retain)NSMutableArray *listArray;
+@property (nonatomic,retain)NSArray *listArray;
 @end

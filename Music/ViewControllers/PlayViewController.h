@@ -15,8 +15,6 @@
     
     BOOL Hidden;
     UIButton *btnShowNav;
-    
-    UISlider *soundSlider;
     UISlider *progressSlider;
     
     UILabel *musicNameLabel;
@@ -39,7 +37,6 @@
     
     NSString *path;
     MPMediaItemCollection *songs;
-//    AVAudioPlayer *Player;
     NSTimeInterval sec;
     NSTimeInterval currentSec;
     NSTimeInterval leftSec;
@@ -58,19 +55,13 @@
     BOOL soundShow;
     BOOL showList;
     
-    NSString *musicFileName;
-    
     UITableView *musicListTableView;
     
 }
 +(id)sharedPlayerViewController;
-@property (nonatomic,copy)NSString *musicFileName;
-@property (nonatomic,assign)NSInteger currentMusic;
 @property (nonatomic,retain)NSArray *songsArray;
 @property (nonatomic,retain)NSTimer *timer;
-@property (nonatomic,copy)NSString *path;
-//@property (nonatomic,retain)AVAudioPlayer *player;
-@property (nonatomic,retain)MPMediaItemCollection *songs;
+@property (nonatomic,copy)NSString *currentMusicPath;
 @property (nonatomic,copy)NSString *musicName;
 @property (nonatomic,assign)BOOL gono;
 
@@ -78,5 +69,6 @@
 -(void)controlMusic:(UIButton *)button;
 -(void)nextMusic:(UIButton *)button;
 -(void)listClick:(UIButton *)button;
+-(void)playMusic:(NSString *)musicPath;
 
 @end

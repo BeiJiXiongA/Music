@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface MusicCell : UITableViewCell
-@property (nonatomic,retain)IBOutlet UILabel *textLabel;
-@property (nonatomic,retain)IBOutlet UILabel *detailLabel;
-@property (nonatomic,retain)IBOutlet UIImageView *imageView;
+
+@property (nonatomic, strong) UIImageView *iconImageView;
+@property (nonatomic, strong) UILabel *nameLabel;
+@property (nonatomic, strong) UILabel *detailLabel;
+
 @end

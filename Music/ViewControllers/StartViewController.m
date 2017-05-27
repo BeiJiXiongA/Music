@@ -8,7 +8,6 @@
 
 #import "StartViewController.h"
 #import "CONST.h"
-#import "NetListViewController.h"
 #import "NewViewController.h"
 #import "SearchViewController.h"
 #import "UserViewController.h"

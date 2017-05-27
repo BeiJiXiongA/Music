@@ -25,15 +25,7 @@
 
 - (void)dealloc
 {
-    [imgDic release];
-    [controllArr release];
-    [currentView release];
-    
-    tabBarView.delegate = nil;
-    [tabBarView release];
-    [buttomView release];
-    
-    [super dealloc];
+   
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -49,8 +41,8 @@
 {
     self = [super init];
     if (self) {
-        imgDic = [_imgDic retain];
-        controllArr = [_controllerArr retain];
+        imgDic = _imgDic;
+        controllArr = _controllerArr;
     }
     return self;
 }
@@ -78,14 +70,11 @@
     [self btnClickChangeViewWithTag:@"1"];
     
     buttomView = [[ButtomView alloc] init];
-    buttomView.frame = CGRectMake(0, self.view.frame.size.height-50, 320, 50);
-    UIImageView *buttomImageView = [[UIImageView alloc]init];
-    buttomImageView.frame = CGRectMake(0, 0, 320, 50);
-    [buttomImageView setImage:[UIImage imageNamed:@"navi_bg.png"]];
-    [buttomView addSubview:buttomImageView];
+    buttomView.frame = CGRectMake(0, self.view.frame.size.height-50, WIDTH, 50);
+    buttomView.backgroundColor = RGB(58, 122, 191);
     [self.view addSubview:buttomView];
     
-    NSArray *buttomNormalImages = [NSArray arrayWithObjects:@"artist_photo_frame@2x.png",@"play.png",@"next.png",@"list.png", nil];
+    NSArray *buttomNormalImages = [NSArray arrayWithObjects:@"artist_photo_frame",@"play",@"next",@"list", nil];
     
     for (int i=0; i<4; i++)
     {
@@ -106,36 +95,27 @@
         [button addTarget:self action:@selector(buttomClick:) forControlEvents:UIControlEventTouchUpInside];
         [buttomView addSubview:button];
     }
-//    musicLabel = [[UILabel alloc]init];
-    musicLabel.text = playerVC.musicName;
-    musicLabel.textColor = [UIColor whiteColor];
-    musicLabel.font = [UIFont systemFontOfSize:10];
-    musicLabel.frame = CGRectMake(50, 10, 80, 30);
-    musicLabel.backgroundColor = [UIColor clearColor];
-    [buttomView addSubview:musicLabel];
 }
 
 -(void)buttomClick:(UIButton *)button
 {
     playerVC = [PlayViewController sharedPlayerViewController];
     playerVC.gono = YES;
-    
-    NSLog(@"%d",playerVC.currentMusic);
-    
+        
     if (button.tag == 200)
     {
-        [self presentModalViewController:playerVC animated:YES];
+        [self presentViewController:playerVC animated:YES completion:nil];
     }
     else if(button.tag == 201)
     {
         if (play == YES)
         {
-            [button setImage:[UIImage imageNamed:@"play.png"] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
             play = NO;
         }
         else if(play == NO)
         {
-            [button setImage:[UIImage imageNamed:@"pause.png"] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
             play = YES;
         }
         [playerVC controlMusic:button];

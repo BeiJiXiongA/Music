@@ -19,15 +19,14 @@
         //tabBarView = [[UIView alloc] initWithFrame:CGRectMake(0, rect.size.height-44, rect.size.width, 44)];
 //        self.backgroundColor = [UIColor blackColor];
         UIImageView *bg = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"navi_bg.png"]];
-        bg.frame = CGRectMake(0, 0, 320, 44);
+        bg.frame = CGRectMake(0, 0, WIDTH, UI_NAV_BAR_HEIGHT);
         [self addSubview:bg];
         for (int i = 1; i < 5; i++) {
             UIButton * b = [UIButton buttonWithType:UIButtonTypeCustom];
             [b setImage:[[_imgDic objectForKey:@"Normal"] objectAtIndex:i-1] forState:UIControlStateNormal];
-            [b setFrame:CGRectMake((i-1)*80, 0, 80, 44)];
+            [b setFrame:CGRectMake((i-1)*80, UI_NAV_BAR_HEIGHT - 44, 80, 44)];
             [b setTag:i];
             [b addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-            
             [self addSubview:b];
         }
     }

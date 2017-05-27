@@ -20,16 +20,13 @@
 @synthesize myTabBarController;
 - (void)dealloc
 {
-//    [player release];
-    [myTabBarController release];
-    [_window release];
-    [super dealloc];
+    
 }
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch
 
     NSMutableArray *navNormal = [NSMutableArray arrayWithObjects:@"tab_new.png",@"tab_search.png",@"tab_user.png",@"tab_setting.png", nil];
@@ -48,34 +45,22 @@
     
     NewViewController *newVC = [[NewViewController alloc]init];
     UINavigationController *newNav = [[UINavigationController alloc]initWithRootViewController:newVC];
-    [newVC release];
     
     SearchViewController *searchVC = [[SearchViewController alloc]init];
     UINavigationController *searchNav = [[UINavigationController alloc]initWithRootViewController:searchVC];
-    [searchVC release];
     
     UserViewController *userVC = [[UserViewController alloc]init];
     UINavigationController *userNav = [[UINavigationController alloc]initWithRootViewController:userVC];
-    [userVC release];
     
     SettingViewController *settingVC = [[SettingViewController alloc]init];
     UINavigationController *settingNav = [[UINavigationController alloc]initWithRootViewController:settingVC];
-    [settingVC release];
     
     NSArray *viewArray= [NSArray arrayWithObjects: newNav,searchNav,userNav,settingNav, nil];
-    [newNav release];
-    [searchNav release];
-    [userNav release];
-    [settingNav release];
     
     myTabBarController = [[QFTabBarController alloc] initWithQFTabBarControllerSetImg:imageDict AndViewControllerArr:viewArray];
     
     self.window.rootViewController = myTabBarController;
-    [navNormalImages release];
-    [navSelectedImages release];
-    
-    [myTabBarController release];
-    
+   
 //    player = [[AVAudioPlayer alloc] init];
     
     self.window.backgroundColor = [UIColor whiteColor];

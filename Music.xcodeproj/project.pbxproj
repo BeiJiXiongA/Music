@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E446ACB01ED918630063FE87 /* image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E446ACAF1ED918630063FE87 /* image.xcassets */; };
+		E4A7DAD01ED919D400D3CF92 /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A7DACF1ED919D400D3CF92 /* UIView+SetRect.m */; };
+		E4A7DAD31ED91C7A00D3CF92 /* UIImage+ImageFromColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A7DAD21ED91C7A00D3CF92 /* UIImage+ImageFromColor.m */; };
+		E4A7DADC1ED91D0700D3CF92 /* 梁静茹 - 勇气.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E4A7DAD51ED91D0700D3CF92 /* 梁静茹 - 勇气.m4a */; };
+		E4A7DADD1ED91D0700D3CF92 /* 梁静茹 - 太委屈.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E4A7DAD61ED91D0700D3CF92 /* 梁静茹 - 太委屈.m4a */; };
+		E4A7DADE1ED91D0700D3CF92 /* 梁静茹 - 小手拉大手.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E4A7DAD71ED91D0700D3CF92 /* 梁静茹 - 小手拉大手.m4a */; };
+		E4A7DADF1ED91D0700D3CF92 /* 梁静茹 - 想念是会呼吸的痛.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E4A7DAD81ED91D0700D3CF92 /* 梁静茹 - 想念是会呼吸的痛.m4a */; };
+		E4A7DAE01ED91D0700D3CF92 /* 梁静茹 - 慢慢来比较快.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E4A7DAD91ED91D0700D3CF92 /* 梁静茹 - 慢慢来比较快.m4a */; };
+		E4A7DAE11ED91D0700D3CF92 /* 梁静茹 - 没有如果.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E4A7DADA1ED91D0700D3CF92 /* 梁静茹 - 没有如果.m4a */; };
+		E4A7DAE21ED91D0700D3CF92 /* 梁静茹 - 满满的都是爱.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E4A7DADB1ED91D0700D3CF92 /* 梁静茹 - 满满的都是爱.m4a */; };
+		E4A7DAE61ED972D200D3CF92 /* player_slider_playback_left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4A7DAE31ED972D200D3CF92 /* player_slider_playback_left@2x.png */; };
+		E4A7DAE71ED972D200D3CF92 /* player_slider_playback_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4A7DAE41ED972D200D3CF92 /* player_slider_playback_right@2x.png */; };
+		E4A7DAE81ED972D200D3CF92 /* player_slider_playback_thumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4A7DAE51ED972D200D3CF92 /* player_slider_playback_thumb@2x.png */; };
 		FF089CC11733B0820095769A /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF089CC01733B0820095769A /* PlayViewController.m */; };
 		FF089CC41733BA7E0095769A /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF089CC31733BA7D0095769A /* MusicListViewController.m */; };
 		FF3115081732190D007A0FEA /* CustomTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3115051732190D007A0FEA /* CustomTabBarView.m */; };
@@ -43,7 +56,6 @@
 		FF3C7303172538DF0048D7EB /* zwAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3C7302172538DF0048D7EB /* zwAppDelegate.m */; };
 		FF3C731B172551250048D7EB /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3C731A172551250048D7EB /* StartViewController.m */; };
 		FF3C7322172553410048D7EB /* MusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3C7321172553410048D7EB /* MusicCell.m */; };
-		FF3C73241725536C0048D7EB /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF3C73231725536C0048D7EB /* MusicCell.xib */; };
 		FF3C733017255CD20048D7EB /* MusicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3C732F17255CD10048D7EB /* MusicItem.m */; };
 		FF6E10F8172B8C39007907E7 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF6E0F3D172B8C39007907E7 /* config.plist */; };
 		FF6E10FA172B8C39007907E7 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF6E0F40172B8C39007907E7 /* 1.jpg */; };
@@ -263,10 +275,10 @@
 		FF6E11D0172B8C3A007907E7 /* artist_photo_frame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E1024172B8C39007907E7 /* artist_photo_frame@2x.png */; };
 		FF6E11D1172B8C3A007907E7 /* artist_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E1025172B8C39007907E7 /* artist_tab.png */; };
 		FF6E11D2172B8C3A007907E7 /* artist_tab2.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E1026172B8C39007907E7 /* artist_tab2.png */; };
-		FF6E11D3172B8C3A007907E7 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E1027172B8C39007907E7 /* back.png */; };
-		FF6E11D4172B8C3A007907E7 /* back2.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E1028172B8C39007907E7 /* back2.png */; };
-		FF6E11D5172B8C3A007907E7 /* back2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E1029172B8C39007907E7 /* back2@2x.png */; };
-		FF6E11D6172B8C3A007907E7 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E102A172B8C39007907E7 /* back@2x.png */; };
+		FF6E11D3172B8C3A007907E7 /* back_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E1027172B8C39007907E7 /* back_nav.png */; };
+		FF6E11D4172B8C3A007907E7 /* back2_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E1028172B8C39007907E7 /* back2_nav.png */; };
+		FF6E11D5172B8C3A007907E7 /* back2_nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E1029172B8C39007907E7 /* back2_nav@2x.png */; };
+		FF6E11D6172B8C3A007907E7 /* back_nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E102A172B8C39007907E7 /* back_nav@2x.png */; };
 		FF6E11D7172B8C3A007907E7 /* btn_bkg_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E102B172B8C39007907E7 /* btn_bkg_highlighted.png */; };
 		FF6E11D8172B8C3A007907E7 /* btn_bkg_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E102C172B8C39007907E7 /* btn_bkg_highlighted@2x.png */; };
 		FF6E11D9172B8C3A007907E7 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E102D172B8C39007907E7 /* button.png */; };
@@ -473,48 +485,13 @@
 		FF6E12A6172B8DCC007907E7 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E12A5172B8DCA007907E7 /* Icon.png */; };
 		FF6E12A8172B8DD7007907E7 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E12A7172B8DD6007907E7 /* Icon@2x.png */; };
 		FF6E12AA172B8DF2007907E7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF6E12A9172B8DF1007907E7 /* Default@2x.png */; };
-		FF7BD4FD1726791000344E5A /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4AE1726791000344E5A /* ASIAuthenticationDialog.m */; };
-		FF7BD4FE1726791000344E5A /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4B11726791000344E5A /* ASIDataCompressor.m */; };
-		FF7BD4FF1726791000344E5A /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4B31726791000344E5A /* ASIDataDecompressor.m */; };
-		FF7BD5001726791000344E5A /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4B51726791000344E5A /* ASIDownloadCache.m */; };
-		FF7BD5011726791000344E5A /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4B71726791000344E5A /* ASIFormDataRequest.m */; };
-		FF7BD5021726791000344E5A /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4B91726791000344E5A /* ASIHTTPRequest.m */; };
-		FF7BD5031726791000344E5A /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4BD1726791000344E5A /* ASIInputStream.m */; };
-		FF7BD5041726791000344E5A /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4BF1726791000344E5A /* ASINetworkQueue.m */; };
-		FF7BD5051726791000344E5A /* ASICloudFilesCDNRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4C41726791000344E5A /* ASICloudFilesCDNRequest.m */; };
-		FF7BD5061726791000344E5A /* ASICloudFilesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4C61726791000344E5A /* ASICloudFilesContainer.m */; };
-		FF7BD5071726791000344E5A /* ASICloudFilesContainerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4C81726791000344E5A /* ASICloudFilesContainerRequest.m */; };
-		FF7BD5081726791000344E5A /* ASICloudFilesContainerXMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4CA1726791000344E5A /* ASICloudFilesContainerXMLParserDelegate.m */; };
-		FF7BD5091726791000344E5A /* ASICloudFilesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4CC1726791000344E5A /* ASICloudFilesObject.m */; };
-		FF7BD50A1726791000344E5A /* ASICloudFilesObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4CE1726791000344E5A /* ASICloudFilesObjectRequest.m */; };
-		FF7BD50B1726791000344E5A /* ASICloudFilesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4D01726791000344E5A /* ASICloudFilesRequest.m */; };
-		FF7BD50C1726791000344E5A /* ASIS3Bucket.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4D41726791000344E5A /* ASIS3Bucket.m */; };
-		FF7BD50D1726791000344E5A /* ASIS3BucketObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4D61726791000344E5A /* ASIS3BucketObject.m */; };
-		FF7BD50E1726791000344E5A /* ASIS3BucketRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4D81726791000344E5A /* ASIS3BucketRequest.m */; };
-		FF7BD50F1726791000344E5A /* ASIS3ObjectRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4DA1726791000344E5A /* ASIS3ObjectRequest.m */; };
-		FF7BD5101726791000344E5A /* ASIS3Request.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4DC1726791000344E5A /* ASIS3Request.m */; };
-		FF7BD5111726791000344E5A /* ASIS3ServiceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4DE1726791000344E5A /* ASIS3ServiceRequest.m */; };
-		FF7BD5121726791000344E5A /* README-GHUnit in Resources */ = {isa = PBXBuildFile; fileRef = FF7BD4E21726791000344E5A /* README-GHUnit */; };
-		FF7BD5131726791000344E5A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4E51726791000344E5A /* Reachability.m */; };
-		FF7BD5151726791000344E5A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FF7BD4E91726791000344E5A /* LICENSE */; };
-		FF7BD5161726791000344E5A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FF7BD4EA1726791000344E5A /* README.md */; };
-		FF7BD5171726791000344E5A /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4EC1726791000344E5A /* SDImageCache.m */; };
-		FF7BD5181726791000344E5A /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4F01726791000344E5A /* SDWebImageDecoder.m */; };
-		FF7BD5191726791000344E5A /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4F21726791000344E5A /* SDWebImageDownloader.m */; };
-		FF7BD51A1726791000344E5A /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4F51726791000344E5A /* SDWebImageManager.m */; };
-		FF7BD51B1726791000344E5A /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4F81726791000344E5A /* SDWebImagePrefetcher.m */; };
-		FF7BD51C1726791000344E5A /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4FA1726791000344E5A /* UIButton+WebCache.m */; };
-		FF7BD51D1726791000344E5A /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD4FC1726791000344E5A /* UIImageView+WebCache.m */; };
-		FF7BD52417267A0300344E5A /* HttpDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD52317267A0300344E5A /* HttpDownload.m */; };
 		FF7BD52917267A3B00344E5A /* RankListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD52617267A3B00344E5A /* RankListViewController.m */; };
-		FF7BD52A17267A3B00344E5A /* SingerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD52817267A3B00344E5A /* SingerViewController.m */; };
 		FF7BD52D17267C7C00344E5A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7BD52C17267C7B00344E5A /* SystemConfiguration.framework */; };
 		FF7BD52F17267C8700344E5A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7BD52E17267C8700344E5A /* CFNetwork.framework */; };
 		FF7BD53117267C9100344E5A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7BD53017267C9100344E5A /* MobileCoreServices.framework */; };
 		FF7BD53317267CC200344E5A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7BD53217267CC200344E5A /* QuartzCore.framework */; };
 		FF7BD53517267CCB00344E5A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7BD53417267CCB00344E5A /* libz.dylib */; };
 		FF7BD53717267CD300344E5A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7BD53617267CD300344E5A /* AVFoundation.framework */; };
-		FF7BD53D1726801C00344E5A /* NetListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7BD53C1726801C00344E5A /* NetListViewController.m */; };
 		FFBC354D172918FB00578C6A /* SingerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBC354C172918FB00578C6A /* SingerListViewController.m */; };
 		FFBC3551172949FC00578C6A /* NSString+StringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBC3550172949FC00578C6A /* NSString+StringSize.m */; };
 		FFD03CA2172CC16C007B495C /* LyricsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD03CA1172CC16C007B495C /* LyricsLabel.m */; };
@@ -525,7 +502,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DB9B3B2F1ED87CC50015D7D7 /* UserDefine.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefine.pch; sourceTree = "<group>"; };
+		E446ACAF1ED918630063FE87 /* image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = image.xcassets; sourceTree = "<group>"; };
+		E4A7DACE1ED919D400D3CF92 /* UIView+SetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SetRect.h"; sourceTree = "<group>"; };
+		E4A7DACF1ED919D400D3CF92 /* UIView+SetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetRect.m"; sourceTree = "<group>"; };
+		E4A7DAD11ED91C7A00D3CF92 /* UIImage+ImageFromColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageFromColor.h"; sourceTree = "<group>"; };
+		E4A7DAD21ED91C7A00D3CF92 /* UIImage+ImageFromColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageFromColor.m"; sourceTree = "<group>"; };
+		E4A7DAD51ED91D0700D3CF92 /* 梁静茹 - 勇气.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "梁静茹 - 勇气.m4a"; sourceTree = "<group>"; };
+		E4A7DAD61ED91D0700D3CF92 /* 梁静茹 - 太委屈.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "梁静茹 - 太委屈.m4a"; sourceTree = "<group>"; };
+		E4A7DAD71ED91D0700D3CF92 /* 梁静茹 - 小手拉大手.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "梁静茹 - 小手拉大手.m4a"; sourceTree = "<group>"; };
+		E4A7DAD81ED91D0700D3CF92 /* 梁静茹 - 想念是会呼吸的痛.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "梁静茹 - 想念是会呼吸的痛.m4a"; sourceTree = "<group>"; };
+		E4A7DAD91ED91D0700D3CF92 /* 梁静茹 - 慢慢来比较快.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "梁静茹 - 慢慢来比较快.m4a"; sourceTree = "<group>"; };
+		E4A7DADA1ED91D0700D3CF92 /* 梁静茹 - 没有如果.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "梁静茹 - 没有如果.m4a"; sourceTree = "<group>"; };
+		E4A7DADB1ED91D0700D3CF92 /* 梁静茹 - 满满的都是爱.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "梁静茹 - 满满的都是爱.m4a"; sourceTree = "<group>"; };
+		E4A7DAE31ED972D200D3CF92 /* player_slider_playback_left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_slider_playback_left@2x.png"; sourceTree = "<group>"; };
+		E4A7DAE41ED972D200D3CF92 /* player_slider_playback_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_slider_playback_right@2x.png"; sourceTree = "<group>"; };
+		E4A7DAE51ED972D200D3CF92 /* player_slider_playback_thumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_slider_playback_thumb@2x.png"; sourceTree = "<group>"; };
 		FF089CBF1733B0820095769A /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
 		FF089CC01733B0820095769A /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
 		FF089CC21733BA7D0095769A /* MusicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListViewController.h; sourceTree = "<group>"; };
@@ -573,7 +564,6 @@
 		FF3C731A172551250048D7EB /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		FF3C7320172553410048D7EB /* MusicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicCell.h; sourceTree = "<group>"; };
 		FF3C7321172553410048D7EB /* MusicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicCell.m; sourceTree = "<group>"; };
-		FF3C73231725536C0048D7EB /* MusicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
 		FF3C732E17255CD10048D7EB /* MusicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicItem.h; sourceTree = "<group>"; };
 		FF3C732F17255CD10048D7EB /* MusicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicItem.m; sourceTree = "<group>"; };
 		FF6E0F3D172B8C39007907E7 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = config.plist; sourceTree = "<group>"; };
@@ -794,10 +784,10 @@
 		FF6E1024172B8C39007907E7 /* artist_photo_frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "artist_photo_frame@2x.png"; sourceTree = "<group>"; };
 		FF6E1025172B8C39007907E7 /* artist_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artist_tab.png; sourceTree = "<group>"; };
 		FF6E1026172B8C39007907E7 /* artist_tab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artist_tab2.png; sourceTree = "<group>"; };
-		FF6E1027172B8C39007907E7 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
-		FF6E1028172B8C39007907E7 /* back2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back2.png; sourceTree = "<group>"; };
-		FF6E1029172B8C39007907E7 /* back2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back2@2x.png"; sourceTree = "<group>"; };
-		FF6E102A172B8C39007907E7 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		FF6E1027172B8C39007907E7 /* back_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_nav.png; sourceTree = "<group>"; };
+		FF6E1028172B8C39007907E7 /* back2_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back2_nav.png; sourceTree = "<group>"; };
+		FF6E1029172B8C39007907E7 /* back2_nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back2_nav@2x.png"; sourceTree = "<group>"; };
+		FF6E102A172B8C39007907E7 /* back_nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_nav@2x.png"; sourceTree = "<group>"; };
 		FF6E102B172B8C39007907E7 /* btn_bkg_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_bkg_highlighted.png; sourceTree = "<group>"; };
 		FF6E102C172B8C39007907E7 /* btn_bkg_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_bkg_highlighted@2x.png"; sourceTree = "<group>"; };
 		FF6E102D172B8C39007907E7 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
@@ -1004,82 +994,8 @@
 		FF6E12A5172B8DCA007907E7 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		FF6E12A7172B8DD6007907E7 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		FF6E12A9172B8DF1007907E7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		FF7BD4AD1726791000344E5A /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
-		FF7BD4AE1726791000344E5A /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
-		FF7BD4AF1726791000344E5A /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
-		FF7BD4B01726791000344E5A /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
-		FF7BD4B11726791000344E5A /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
-		FF7BD4B21726791000344E5A /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
-		FF7BD4B31726791000344E5A /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
-		FF7BD4B41726791000344E5A /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
-		FF7BD4B51726791000344E5A /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
-		FF7BD4B61726791000344E5A /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
-		FF7BD4B71726791000344E5A /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
-		FF7BD4B81726791000344E5A /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
-		FF7BD4B91726791000344E5A /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
-		FF7BD4BA1726791000344E5A /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
-		FF7BD4BB1726791000344E5A /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
-		FF7BD4BC1726791000344E5A /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
-		FF7BD4BD1726791000344E5A /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
-		FF7BD4BE1726791000344E5A /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
-		FF7BD4BF1726791000344E5A /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
-		FF7BD4C01726791000344E5A /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
-		FF7BD4C31726791000344E5A /* ASICloudFilesCDNRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesCDNRequest.h; sourceTree = "<group>"; };
-		FF7BD4C41726791000344E5A /* ASICloudFilesCDNRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesCDNRequest.m; sourceTree = "<group>"; };
-		FF7BD4C51726791000344E5A /* ASICloudFilesContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesContainer.h; sourceTree = "<group>"; };
-		FF7BD4C61726791000344E5A /* ASICloudFilesContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesContainer.m; sourceTree = "<group>"; };
-		FF7BD4C71726791000344E5A /* ASICloudFilesContainerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesContainerRequest.h; sourceTree = "<group>"; };
-		FF7BD4C81726791000344E5A /* ASICloudFilesContainerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesContainerRequest.m; sourceTree = "<group>"; };
-		FF7BD4C91726791000344E5A /* ASICloudFilesContainerXMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesContainerXMLParserDelegate.h; sourceTree = "<group>"; };
-		FF7BD4CA1726791000344E5A /* ASICloudFilesContainerXMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesContainerXMLParserDelegate.m; sourceTree = "<group>"; };
-		FF7BD4CB1726791000344E5A /* ASICloudFilesObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesObject.h; sourceTree = "<group>"; };
-		FF7BD4CC1726791000344E5A /* ASICloudFilesObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesObject.m; sourceTree = "<group>"; };
-		FF7BD4CD1726791000344E5A /* ASICloudFilesObjectRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesObjectRequest.h; sourceTree = "<group>"; };
-		FF7BD4CE1726791000344E5A /* ASICloudFilesObjectRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesObjectRequest.m; sourceTree = "<group>"; };
-		FF7BD4CF1726791000344E5A /* ASICloudFilesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICloudFilesRequest.h; sourceTree = "<group>"; };
-		FF7BD4D01726791000344E5A /* ASICloudFilesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASICloudFilesRequest.m; sourceTree = "<group>"; };
-		FF7BD4D21726791000344E5A /* ASINSXMLParserCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINSXMLParserCompat.h; sourceTree = "<group>"; };
-		FF7BD4D31726791000344E5A /* ASIS3Bucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3Bucket.h; sourceTree = "<group>"; };
-		FF7BD4D41726791000344E5A /* ASIS3Bucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3Bucket.m; sourceTree = "<group>"; };
-		FF7BD4D51726791000344E5A /* ASIS3BucketObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3BucketObject.h; sourceTree = "<group>"; };
-		FF7BD4D61726791000344E5A /* ASIS3BucketObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3BucketObject.m; sourceTree = "<group>"; };
-		FF7BD4D71726791000344E5A /* ASIS3BucketRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3BucketRequest.h; sourceTree = "<group>"; };
-		FF7BD4D81726791000344E5A /* ASIS3BucketRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3BucketRequest.m; sourceTree = "<group>"; };
-		FF7BD4D91726791000344E5A /* ASIS3ObjectRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3ObjectRequest.h; sourceTree = "<group>"; };
-		FF7BD4DA1726791000344E5A /* ASIS3ObjectRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3ObjectRequest.m; sourceTree = "<group>"; };
-		FF7BD4DB1726791000344E5A /* ASIS3Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3Request.h; sourceTree = "<group>"; };
-		FF7BD4DC1726791000344E5A /* ASIS3Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3Request.m; sourceTree = "<group>"; };
-		FF7BD4DD1726791000344E5A /* ASIS3ServiceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIS3ServiceRequest.h; sourceTree = "<group>"; };
-		FF7BD4DE1726791000344E5A /* ASIS3ServiceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIS3ServiceRequest.m; sourceTree = "<group>"; };
-		FF7BD4E21726791000344E5A /* README-GHUnit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "README-GHUnit"; sourceTree = "<group>"; };
-		FF7BD4E41726791000344E5A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		FF7BD4E51726791000344E5A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		FF7BD4E91726791000344E5A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FF7BD4EA1726791000344E5A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		FF7BD4EB1726791000344E5A /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
-		FF7BD4EC1726791000344E5A /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
-		FF7BD4ED1726791000344E5A /* SDImageCacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCacheDelegate.h; sourceTree = "<group>"; };
-		FF7BD4EE1726791000344E5A /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
-		FF7BD4EF1726791000344E5A /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
-		FF7BD4F01726791000344E5A /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
-		FF7BD4F11726791000344E5A /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
-		FF7BD4F21726791000344E5A /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
-		FF7BD4F31726791000344E5A /* SDWebImageDownloaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderDelegate.h; sourceTree = "<group>"; };
-		FF7BD4F41726791000344E5A /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
-		FF7BD4F51726791000344E5A /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
-		FF7BD4F61726791000344E5A /* SDWebImageManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManagerDelegate.h; sourceTree = "<group>"; };
-		FF7BD4F71726791000344E5A /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
-		FF7BD4F81726791000344E5A /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
-		FF7BD4F91726791000344E5A /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
-		FF7BD4FA1726791000344E5A /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
-		FF7BD4FB1726791000344E5A /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
-		FF7BD4FC1726791000344E5A /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
-		FF7BD52217267A0300344E5A /* HttpDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpDownload.h; sourceTree = "<group>"; };
-		FF7BD52317267A0300344E5A /* HttpDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpDownload.m; sourceTree = "<group>"; };
 		FF7BD52517267A3B00344E5A /* RankListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankListViewController.h; sourceTree = "<group>"; };
 		FF7BD52617267A3B00344E5A /* RankListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankListViewController.m; sourceTree = "<group>"; };
-		FF7BD52717267A3B00344E5A /* SingerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingerViewController.h; sourceTree = "<group>"; };
-		FF7BD52817267A3B00344E5A /* SingerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingerViewController.m; sourceTree = "<group>"; };
 		FF7BD52B17267C3700344E5A /* CONST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CONST.h; sourceTree = "<group>"; };
 		FF7BD52C17267C7B00344E5A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FF7BD52E17267C8700344E5A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -1087,8 +1003,6 @@
 		FF7BD53217267CC200344E5A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FF7BD53417267CCB00344E5A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		FF7BD53617267CD300344E5A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		FF7BD53B1726801C00344E5A /* NetListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetListViewController.h; sourceTree = "<group>"; };
-		FF7BD53C1726801C00344E5A /* NetListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetListViewController.m; sourceTree = "<group>"; };
 		FFBC354B172918FA00578C6A /* SingerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingerListViewController.h; sourceTree = "<group>"; };
 		FFBC354C172918FB00578C6A /* SingerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingerListViewController.m; sourceTree = "<group>"; };
 		FFBC354F172949FC00578C6A /* NSString+StringSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringSize.h"; sourceTree = "<group>"; };
@@ -1130,14 +1044,34 @@
 		DB9B3B2E1ED87C4F0015D7D7 /* customclass */ = {
 			isa = PBXGroup;
 			children = (
-				DB9B3B2F1ED87CC50015D7D7 /* UserDefine.pch */,
+				E4A7DACE1ED919D400D3CF92 /* UIView+SetRect.h */,
+				E4A7DACF1ED919D400D3CF92 /* UIView+SetRect.m */,
+				E4A7DAD11ED91C7A00D3CF92 /* UIImage+ImageFromColor.h */,
+				E4A7DAD21ED91C7A00D3CF92 /* UIImage+ImageFromColor.m */,
 			);
 			path = customclass;
+			sourceTree = "<group>";
+		};
+		E4A7DAD41ED91D0700D3CF92 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				E4A7DAD51ED91D0700D3CF92 /* 梁静茹 - 勇气.m4a */,
+				E4A7DAD61ED91D0700D3CF92 /* 梁静茹 - 太委屈.m4a */,
+				E4A7DAD71ED91D0700D3CF92 /* 梁静茹 - 小手拉大手.m4a */,
+				E4A7DAD81ED91D0700D3CF92 /* 梁静茹 - 想念是会呼吸的痛.m4a */,
+				E4A7DAD91ED91D0700D3CF92 /* 梁静茹 - 慢慢来比较快.m4a */,
+				E4A7DADA1ED91D0700D3CF92 /* 梁静茹 - 没有如果.m4a */,
+				E4A7DADB1ED91D0700D3CF92 /* 梁静茹 - 满满的都是爱.m4a */,
+			);
+			path = music;
 			sourceTree = "<group>";
 		};
 		FF3115911732335C007A0FEA /* img */ = {
 			isa = PBXGroup;
 			children = (
+				E4A7DAE31ED972D200D3CF92 /* player_slider_playback_left@2x.png */,
+				E4A7DAE41ED972D200D3CF92 /* player_slider_playback_right@2x.png */,
+				E4A7DAE51ED972D200D3CF92 /* player_slider_playback_thumb@2x.png */,
 				FF3115921732335C007A0FEA /* 1_normal.png */,
 				FF3115931732335C007A0FEA /* 1_selected.png */,
 				FF3115941732335C007A0FEA /* 2_normal.png */,
@@ -1211,11 +1145,11 @@
 		FF3C72F8172538DF0048D7EB /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				E4A7DAD41ED91D0700D3CF92 /* music */,
 				DB9B3B2E1ED87C4F0015D7D7 /* customclass */,
 				FF3115C517326176007A0FEA /* protocol */,
 				FFD5D35C17320AFE00C2FB04 /* Custom */,
 				FF7BD4A9172678D600344E5A /* database */,
-				FF7BD4AA172678D600344E5A /* internet */,
 				FF3C73251725541F0048D7EB /* images */,
 				FF3C731F172553210048D7EB /* Units */,
 				FF3C7318172551240048D7EB /* ViewControllers */,
@@ -1233,6 +1167,7 @@
 				FF3C72FB172538DF0048D7EB /* InfoPlist.strings */,
 				FF3C72FE172538DF0048D7EB /* main.m */,
 				FF3C7300172538DF0048D7EB /* Music-Prefix.pch */,
+				E446ACAF1ED918630063FE87 /* image.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1247,12 +1182,8 @@
 				FF7BD52B17267C3700344E5A /* CONST.h */,
 				FF7BD52517267A3B00344E5A /* RankListViewController.h */,
 				FF7BD52617267A3B00344E5A /* RankListViewController.m */,
-				FF7BD52717267A3B00344E5A /* SingerViewController.h */,
-				FF7BD52817267A3B00344E5A /* SingerViewController.m */,
 				FF3C7319172551250048D7EB /* StartViewController.h */,
 				FF3C731A172551250048D7EB /* StartViewController.m */,
-				FF7BD53B1726801C00344E5A /* NetListViewController.h */,
-				FF7BD53C1726801C00344E5A /* NetListViewController.m */,
 				FFBC354B172918FA00578C6A /* SingerListViewController.h */,
 				FFBC354C172918FB00578C6A /* SingerListViewController.m */,
 				FFF9603717311BDE00E87985 /* UserViewController.h */,
@@ -1272,7 +1203,6 @@
 			children = (
 				FF3C7320172553410048D7EB /* MusicCell.h */,
 				FF3C7321172553410048D7EB /* MusicCell.m */,
-				FF3C73231725536C0048D7EB /* MusicCell.xib */,
 				FF3C732E17255CD10048D7EB /* MusicItem.h */,
 				FF3C732F17255CD10048D7EB /* MusicItem.m */,
 				FFBC354F172949FC00578C6A /* NSString+StringSize.h */,
@@ -1642,10 +1572,10 @@
 				FF6E1024172B8C39007907E7 /* artist_photo_frame@2x.png */,
 				FF6E1025172B8C39007907E7 /* artist_tab.png */,
 				FF6E1026172B8C39007907E7 /* artist_tab2.png */,
-				FF6E1027172B8C39007907E7 /* back.png */,
-				FF6E1028172B8C39007907E7 /* back2.png */,
-				FF6E1029172B8C39007907E7 /* back2@2x.png */,
-				FF6E102A172B8C39007907E7 /* back@2x.png */,
+				FF6E1027172B8C39007907E7 /* back_nav.png */,
+				FF6E1028172B8C39007907E7 /* back2_nav.png */,
+				FF6E1029172B8C39007907E7 /* back2_nav@2x.png */,
+				FF6E102A172B8C39007907E7 /* back_nav@2x.png */,
 				FF6E102B172B8C39007907E7 /* btn_bkg_highlighted.png */,
 				FF6E102C172B8C39007907E7 /* btn_bkg_highlighted@2x.png */,
 				FF6E102D172B8C39007907E7 /* button.png */,
@@ -1867,165 +1797,6 @@
 			path = database;
 			sourceTree = "<group>";
 		};
-		FF7BD4AA172678D600344E5A /* internet */ = {
-			isa = PBXGroup;
-			children = (
-				FF7BD52217267A0300344E5A /* HttpDownload.h */,
-				FF7BD52317267A0300344E5A /* HttpDownload.m */,
-				FF7BD4AB1726791000344E5A /* ASIHTTPRequest */,
-				FF7BD4E81726791000344E5A /* SDWebImage */,
-			);
-			path = internet;
-			sourceTree = "<group>";
-		};
-		FF7BD4AB1726791000344E5A /* ASIHTTPRequest */ = {
-			isa = PBXGroup;
-			children = (
-				FF7BD4AC1726791000344E5A /* ASIHTTPRequest */,
-				FF7BD4E01726791000344E5A /* External */,
-			);
-			path = ASIHTTPRequest;
-			sourceTree = "<group>";
-		};
-		FF7BD4AC1726791000344E5A /* ASIHTTPRequest */ = {
-			isa = PBXGroup;
-			children = (
-				FF7BD4AD1726791000344E5A /* ASIAuthenticationDialog.h */,
-				FF7BD4AE1726791000344E5A /* ASIAuthenticationDialog.m */,
-				FF7BD4AF1726791000344E5A /* ASICacheDelegate.h */,
-				FF7BD4B01726791000344E5A /* ASIDataCompressor.h */,
-				FF7BD4B11726791000344E5A /* ASIDataCompressor.m */,
-				FF7BD4B21726791000344E5A /* ASIDataDecompressor.h */,
-				FF7BD4B31726791000344E5A /* ASIDataDecompressor.m */,
-				FF7BD4B41726791000344E5A /* ASIDownloadCache.h */,
-				FF7BD4B51726791000344E5A /* ASIDownloadCache.m */,
-				FF7BD4B61726791000344E5A /* ASIFormDataRequest.h */,
-				FF7BD4B71726791000344E5A /* ASIFormDataRequest.m */,
-				FF7BD4B81726791000344E5A /* ASIHTTPRequest.h */,
-				FF7BD4B91726791000344E5A /* ASIHTTPRequest.m */,
-				FF7BD4BA1726791000344E5A /* ASIHTTPRequestConfig.h */,
-				FF7BD4BB1726791000344E5A /* ASIHTTPRequestDelegate.h */,
-				FF7BD4BC1726791000344E5A /* ASIInputStream.h */,
-				FF7BD4BD1726791000344E5A /* ASIInputStream.m */,
-				FF7BD4BE1726791000344E5A /* ASINetworkQueue.h */,
-				FF7BD4BF1726791000344E5A /* ASINetworkQueue.m */,
-				FF7BD4C01726791000344E5A /* ASIProgressDelegate.h */,
-				FF7BD4C11726791000344E5A /* ASIWebPageRequest */,
-				FF7BD4C21726791000344E5A /* CloudFiles */,
-				FF7BD4D11726791000344E5A /* S3 */,
-				FF7BD4DF1726791000344E5A /* Tests */,
-			);
-			path = ASIHTTPRequest;
-			sourceTree = "<group>";
-		};
-		FF7BD4C11726791000344E5A /* ASIWebPageRequest */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ASIWebPageRequest;
-			sourceTree = "<group>";
-		};
-		FF7BD4C21726791000344E5A /* CloudFiles */ = {
-			isa = PBXGroup;
-			children = (
-				FF7BD4C31726791000344E5A /* ASICloudFilesCDNRequest.h */,
-				FF7BD4C41726791000344E5A /* ASICloudFilesCDNRequest.m */,
-				FF7BD4C51726791000344E5A /* ASICloudFilesContainer.h */,
-				FF7BD4C61726791000344E5A /* ASICloudFilesContainer.m */,
-				FF7BD4C71726791000344E5A /* ASICloudFilesContainerRequest.h */,
-				FF7BD4C81726791000344E5A /* ASICloudFilesContainerRequest.m */,
-				FF7BD4C91726791000344E5A /* ASICloudFilesContainerXMLParserDelegate.h */,
-				FF7BD4CA1726791000344E5A /* ASICloudFilesContainerXMLParserDelegate.m */,
-				FF7BD4CB1726791000344E5A /* ASICloudFilesObject.h */,
-				FF7BD4CC1726791000344E5A /* ASICloudFilesObject.m */,
-				FF7BD4CD1726791000344E5A /* ASICloudFilesObjectRequest.h */,
-				FF7BD4CE1726791000344E5A /* ASICloudFilesObjectRequest.m */,
-				FF7BD4CF1726791000344E5A /* ASICloudFilesRequest.h */,
-				FF7BD4D01726791000344E5A /* ASICloudFilesRequest.m */,
-			);
-			path = CloudFiles;
-			sourceTree = "<group>";
-		};
-		FF7BD4D11726791000344E5A /* S3 */ = {
-			isa = PBXGroup;
-			children = (
-				FF7BD4D21726791000344E5A /* ASINSXMLParserCompat.h */,
-				FF7BD4D31726791000344E5A /* ASIS3Bucket.h */,
-				FF7BD4D41726791000344E5A /* ASIS3Bucket.m */,
-				FF7BD4D51726791000344E5A /* ASIS3BucketObject.h */,
-				FF7BD4D61726791000344E5A /* ASIS3BucketObject.m */,
-				FF7BD4D71726791000344E5A /* ASIS3BucketRequest.h */,
-				FF7BD4D81726791000344E5A /* ASIS3BucketRequest.m */,
-				FF7BD4D91726791000344E5A /* ASIS3ObjectRequest.h */,
-				FF7BD4DA1726791000344E5A /* ASIS3ObjectRequest.m */,
-				FF7BD4DB1726791000344E5A /* ASIS3Request.h */,
-				FF7BD4DC1726791000344E5A /* ASIS3Request.m */,
-				FF7BD4DD1726791000344E5A /* ASIS3ServiceRequest.h */,
-				FF7BD4DE1726791000344E5A /* ASIS3ServiceRequest.m */,
-			);
-			path = S3;
-			sourceTree = "<group>";
-		};
-		FF7BD4DF1726791000344E5A /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		FF7BD4E01726791000344E5A /* External */ = {
-			isa = PBXGroup;
-			children = (
-				FF7BD4E11726791000344E5A /* GHUnit */,
-				FF7BD4E31726791000344E5A /* Reachability */,
-			);
-			path = External;
-			sourceTree = "<group>";
-		};
-		FF7BD4E11726791000344E5A /* GHUnit */ = {
-			isa = PBXGroup;
-			children = (
-				FF7BD4E21726791000344E5A /* README-GHUnit */,
-			);
-			path = GHUnit;
-			sourceTree = "<group>";
-		};
-		FF7BD4E31726791000344E5A /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				FF7BD4E41726791000344E5A /* Reachability.h */,
-				FF7BD4E51726791000344E5A /* Reachability.m */,
-			);
-			path = Reachability;
-			sourceTree = "<group>";
-		};
-		FF7BD4E81726791000344E5A /* SDWebImage */ = {
-			isa = PBXGroup;
-			children = (
-				FF7BD4E91726791000344E5A /* LICENSE */,
-				FF7BD4EA1726791000344E5A /* README.md */,
-				FF7BD4EB1726791000344E5A /* SDImageCache.h */,
-				FF7BD4EC1726791000344E5A /* SDImageCache.m */,
-				FF7BD4ED1726791000344E5A /* SDImageCacheDelegate.h */,
-				FF7BD4EE1726791000344E5A /* SDWebImageCompat.h */,
-				FF7BD4EF1726791000344E5A /* SDWebImageDecoder.h */,
-				FF7BD4F01726791000344E5A /* SDWebImageDecoder.m */,
-				FF7BD4F11726791000344E5A /* SDWebImageDownloader.h */,
-				FF7BD4F21726791000344E5A /* SDWebImageDownloader.m */,
-				FF7BD4F31726791000344E5A /* SDWebImageDownloaderDelegate.h */,
-				FF7BD4F41726791000344E5A /* SDWebImageManager.h */,
-				FF7BD4F51726791000344E5A /* SDWebImageManager.m */,
-				FF7BD4F61726791000344E5A /* SDWebImageManagerDelegate.h */,
-				FF7BD4F71726791000344E5A /* SDWebImagePrefetcher.h */,
-				FF7BD4F81726791000344E5A /* SDWebImagePrefetcher.m */,
-				FF7BD4F91726791000344E5A /* UIButton+WebCache.h */,
-				FF7BD4FA1726791000344E5A /* UIButton+WebCache.m */,
-				FF7BD4FB1726791000344E5A /* UIImageView+WebCache.h */,
-				FF7BD4FC1726791000344E5A /* UIImageView+WebCache.m */,
-			);
-			path = SDWebImage;
-			sourceTree = "<group>";
-		};
 		FFD5D35C17320AFE00C2FB04 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -2066,6 +1837,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				TargetAttributes = {
+					FF3C72ED172538DF0048D7EB = {
+						DevelopmentTeam = X2AB8TRR33;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = FF3C72E8172538DF0048D7EB /* Build configuration list for PBXProject "Music" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2090,10 +1871,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF3C72FD172538DF0048D7EB /* InfoPlist.strings in Resources */,
-				FF3C73241725536C0048D7EB /* MusicCell.xib in Resources */,
-				FF7BD5121726791000344E5A /* README-GHUnit in Resources */,
-				FF7BD5151726791000344E5A /* LICENSE in Resources */,
-				FF7BD5161726791000344E5A /* README.md in Resources */,
 				FF6E10F8172B8C39007907E7 /* config.plist in Resources */,
 				FF6E10FA172B8C39007907E7 /* 1.jpg in Resources */,
 				FF6E10FB172B8C39007907E7 /* 2.jpg in Resources */,
@@ -2102,6 +1879,7 @@
 				FF6E10FE172B8C39007907E7 /* guide.plist in Resources */,
 				FF6E10FF172B8C39007907E7 /* l1.jpg in Resources */,
 				FF6E1100172B8C39007907E7 /* l2.jpg in Resources */,
+				E4A7DAE61ED972D200D3CF92 /* player_slider_playback_left@2x.png in Resources */,
 				FF6E1101172B8C39007907E7 /* l3.jpg in Resources */,
 				FF6E1102172B8C3A007907E7 /* l4.jpg in Resources */,
 				FF6E1103172B8C3A007907E7 /* about.html in Resources */,
@@ -2112,6 +1890,7 @@
 				FF6E1108172B8C3A007907E7 /* Icon.png in Resources */,
 				FF6E1109172B8C3A007907E7 /* Icon@2x.png in Resources */,
 				FF6E110A172B8C3A007907E7 /* rotation1.png in Resources */,
+				E4A7DADC1ED91D0700D3CF92 /* 梁静茹 - 勇气.m4a in Resources */,
 				FF6E110B172B8C3A007907E7 /* rotation2.png in Resources */,
 				FF6E110C172B8C3A007907E7 /* rotation3.png in Resources */,
 				FF6E110D172B8C3A007907E7 /* rotation4.png in Resources */,
@@ -2162,6 +1941,7 @@
 				FF6E113A172B8C3A007907E7 /* downDisable@2x.png in Resources */,
 				FF6E113B172B8C3A007907E7 /* inUse_skin_icon.png in Resources */,
 				FF6E113C172B8C3A007907E7 /* inUse_skin_icon@2x.png in Resources */,
+				E4A7DADE1ED91D0700D3CF92 /* 梁静茹 - 小手拉大手.m4a in Resources */,
 				FF6E113D172B8C3A007907E7 /* more.jpg in Resources */,
 				FF6E113E172B8C3A007907E7 /* navi_button_new.png in Resources */,
 				FF6E113F172B8C3A007907E7 /* navi_button_new@2x.png in Resources */,
@@ -2250,7 +2030,9 @@
 				FF6E1192172B8C3A007907E7 /* favor_small@2x.png in Resources */,
 				FF6E1193172B8C3A007907E7 /* iPod.png in Resources */,
 				FF6E1194172B8C3A007907E7 /* iPod@2x.png in Resources */,
+				E4A7DAE01ED91D0700D3CF92 /* 梁静茹 - 慢慢来比较快.m4a in Resources */,
 				FF6E1195172B8C3A007907E7 /* local_list.png in Resources */,
+				E4A7DAE71ED972D200D3CF92 /* player_slider_playback_right@2x.png in Resources */,
 				FF6E1196172B8C3A007907E7 /* local_list@2x.png in Resources */,
 				FF6E1197172B8C3A007907E7 /* local_search.png in Resources */,
 				FF6E1198172B8C3A007907E7 /* local_search@2x.png in Resources */,
@@ -2282,6 +2064,7 @@
 				FF6E11B2172B8C3A007907E7 /* radio_button@2x.png in Resources */,
 				FF6E11B3172B8C3A007907E7 /* radio_icon.png in Resources */,
 				FF6E11B4172B8C3A007907E7 /* radio_icon@2x.png in Resources */,
+				E4A7DADF1ED91D0700D3CF92 /* 梁静茹 - 想念是会呼吸的痛.m4a in Resources */,
 				FF6E11B5172B8C3A007907E7 /* radio_list.png in Resources */,
 				FF6E11B6172B8C3A007907E7 /* radio_list@2x.png in Resources */,
 				FF6E11B7172B8C3A007907E7 /* recent_list.png in Resources */,
@@ -2291,6 +2074,7 @@
 				FF6E11BB172B8C3A007907E7 /* sign_iPod.png in Resources */,
 				FF6E11BC172B8C3A007907E7 /* sign_iPod@2x.png in Resources */,
 				FF6E11BD172B8C3A007907E7 /* sign_local.png in Resources */,
+				E446ACB01ED918630063FE87 /* image.xcassets in Resources */,
 				FF6E11BE172B8C3A007907E7 /* sign_local@2x.png in Resources */,
 				FF6E11BF172B8C3A007907E7 /* tick.png in Resources */,
 				FF6E11C0172B8C3A007907E7 /* tick@2x.png in Resources */,
@@ -2312,10 +2096,10 @@
 				FF6E11D0172B8C3A007907E7 /* artist_photo_frame@2x.png in Resources */,
 				FF6E11D1172B8C3A007907E7 /* artist_tab.png in Resources */,
 				FF6E11D2172B8C3A007907E7 /* artist_tab2.png in Resources */,
-				FF6E11D3172B8C3A007907E7 /* back.png in Resources */,
-				FF6E11D4172B8C3A007907E7 /* back2.png in Resources */,
-				FF6E11D5172B8C3A007907E7 /* back2@2x.png in Resources */,
-				FF6E11D6172B8C3A007907E7 /* back@2x.png in Resources */,
+				FF6E11D3172B8C3A007907E7 /* back_nav.png in Resources */,
+				FF6E11D4172B8C3A007907E7 /* back2_nav.png in Resources */,
+				FF6E11D5172B8C3A007907E7 /* back2_nav@2x.png in Resources */,
+				FF6E11D6172B8C3A007907E7 /* back_nav@2x.png in Resources */,
 				FF6E11D7172B8C3A007907E7 /* btn_bkg_highlighted.png in Resources */,
 				FF6E11D8172B8C3A007907E7 /* btn_bkg_highlighted@2x.png in Resources */,
 				FF6E11D9172B8C3A007907E7 /* button.png in Resources */,
@@ -2384,6 +2168,7 @@
 				FF6E1218172B8C3A007907E7 /* tab_setting.png in Resources */,
 				FF6E1219172B8C3A007907E7 /* tab_setting2.png in Resources */,
 				FF6E121A172B8C3A007907E7 /* tab_setting2@2x.png in Resources */,
+				E4A7DAE11ED91D0700D3CF92 /* 梁静茹 - 没有如果.m4a in Resources */,
 				FF6E121B172B8C3A007907E7 /* tab_setting@2x.png in Resources */,
 				FF6E121C172B8C3A007907E7 /* tab_user.png in Resources */,
 				FF6E121D172B8C3A007907E7 /* tab_user2.png in Resources */,
@@ -2431,6 +2216,7 @@
 				FF6E1248172B8C3A007907E7 /* list@2x.png in Resources */,
 				FF6E1249172B8C3A007907E7 /* list_split_line.png in Resources */,
 				FF6E124A172B8C3A007907E7 /* list_split_line@2x.png in Resources */,
+				E4A7DAE81ED972D200D3CF92 /* player_slider_playback_thumb@2x.png in Resources */,
 				FF6E124B172B8C3A007907E7 /* menuExpand.png in Resources */,
 				FF6E124C172B8C3A007907E7 /* menuExpand2.png in Resources */,
 				FF6E124D172B8C3A007907E7 /* menuExpand2@2x.png in Resources */,
@@ -2454,6 +2240,7 @@
 				FF6E125F172B8C3A007907E7 /* play.png in Resources */,
 				FF6E1260172B8C3A007907E7 /* play2.png in Resources */,
 				FF6E1261172B8C3A007907E7 /* play2@2x.png in Resources */,
+				E4A7DADD1ED91D0700D3CF92 /* 梁静茹 - 太委屈.m4a in Resources */,
 				FF6E1262172B8C3A007907E7 /* play@2x.png in Resources */,
 				FF6E1263172B8C3A007907E7 /* player_bg.jpg in Resources */,
 				FF6E1264172B8C3A007907E7 /* player_title_line.png in Resources */,
@@ -2541,6 +2328,7 @@
 				FF3115B71732335C007A0FEA /* more_selected.png in Resources */,
 				FF3115B81732335C007A0FEA /* mp_pause.png in Resources */,
 				FF3115B91732335C007A0FEA /* mp_play.png in Resources */,
+				E4A7DAE21ED91D0700D3CF92 /* 梁静茹 - 满满的都是爱.m4a in Resources */,
 				FF3115BA1732335C007A0FEA /* mp_playnext.png in Resources */,
 				FF3115BB1732335C007A0FEA /* mp_volume.png in Resources */,
 			);
@@ -2558,39 +2346,9 @@
 				FF3C731B172551250048D7EB /* StartViewController.m in Sources */,
 				FF3C7322172553410048D7EB /* MusicCell.m in Sources */,
 				FF3C733017255CD20048D7EB /* MusicItem.m in Sources */,
-				FF7BD4FD1726791000344E5A /* ASIAuthenticationDialog.m in Sources */,
-				FF7BD4FE1726791000344E5A /* ASIDataCompressor.m in Sources */,
-				FF7BD4FF1726791000344E5A /* ASIDataDecompressor.m in Sources */,
-				FF7BD5001726791000344E5A /* ASIDownloadCache.m in Sources */,
-				FF7BD5011726791000344E5A /* ASIFormDataRequest.m in Sources */,
-				FF7BD5021726791000344E5A /* ASIHTTPRequest.m in Sources */,
-				FF7BD5031726791000344E5A /* ASIInputStream.m in Sources */,
-				FF7BD5041726791000344E5A /* ASINetworkQueue.m in Sources */,
-				FF7BD5051726791000344E5A /* ASICloudFilesCDNRequest.m in Sources */,
-				FF7BD5061726791000344E5A /* ASICloudFilesContainer.m in Sources */,
-				FF7BD5071726791000344E5A /* ASICloudFilesContainerRequest.m in Sources */,
-				FF7BD5081726791000344E5A /* ASICloudFilesContainerXMLParserDelegate.m in Sources */,
-				FF7BD5091726791000344E5A /* ASICloudFilesObject.m in Sources */,
-				FF7BD50A1726791000344E5A /* ASICloudFilesObjectRequest.m in Sources */,
-				FF7BD50B1726791000344E5A /* ASICloudFilesRequest.m in Sources */,
-				FF7BD50C1726791000344E5A /* ASIS3Bucket.m in Sources */,
-				FF7BD50D1726791000344E5A /* ASIS3BucketObject.m in Sources */,
-				FF7BD50E1726791000344E5A /* ASIS3BucketRequest.m in Sources */,
-				FF7BD50F1726791000344E5A /* ASIS3ObjectRequest.m in Sources */,
-				FF7BD5101726791000344E5A /* ASIS3Request.m in Sources */,
-				FF7BD5111726791000344E5A /* ASIS3ServiceRequest.m in Sources */,
-				FF7BD5131726791000344E5A /* Reachability.m in Sources */,
-				FF7BD5171726791000344E5A /* SDImageCache.m in Sources */,
-				FF7BD5181726791000344E5A /* SDWebImageDecoder.m in Sources */,
-				FF7BD5191726791000344E5A /* SDWebImageDownloader.m in Sources */,
-				FF7BD51A1726791000344E5A /* SDWebImageManager.m in Sources */,
-				FF7BD51B1726791000344E5A /* SDWebImagePrefetcher.m in Sources */,
-				FF7BD51C1726791000344E5A /* UIButton+WebCache.m in Sources */,
-				FF7BD51D1726791000344E5A /* UIImageView+WebCache.m in Sources */,
-				FF7BD52417267A0300344E5A /* HttpDownload.m in Sources */,
+				E4A7DAD31ED91C7A00D3CF92 /* UIImage+ImageFromColor.m in Sources */,
+				E4A7DAD01ED919D400D3CF92 /* UIView+SetRect.m in Sources */,
 				FF7BD52917267A3B00344E5A /* RankListViewController.m in Sources */,
-				FF7BD52A17267A3B00344E5A /* SingerViewController.m in Sources */,
-				FF7BD53D1726801C00344E5A /* NetListViewController.m in Sources */,
 				FFBC354D172918FB00578C6A /* SingerListViewController.m in Sources */,
 				FFBC3551172949FC00578C6A /* NSString+StringSize.m in Sources */,
 				FFD03CA2172CC16C007B495C /* LyricsLabel.m in Sources */,
@@ -2666,9 +2424,12 @@
 		FF3C7307172538DF0048D7EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = X2AB8TRR33;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Music/Music-Prefix.pch";
 				INFOPLIST_FILE = "Music/Music-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -2677,9 +2438,12 @@
 		FF3C7308172538DF0048D7EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = X2AB8TRR33;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Music/Music-Prefix.pch";
 				INFOPLIST_FILE = "Music/Music-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
